@@ -1,3 +1,4 @@
+# Lab 8 – Build a Custom AI Assistant with Microsoft Copilot Studio Agent Builder
 **Objective**
 
 In this lab, you will learn how to create a custom conversational agent
