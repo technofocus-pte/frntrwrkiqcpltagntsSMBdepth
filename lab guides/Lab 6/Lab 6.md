@@ -1,3 +1,5 @@
+# Lab 6 – Optimize Financial Analysis and Reporting with Microsoft 365 Copilot
+
 **Estimated Duration:** 40 minutes
 
 ## **Lab objectives**
