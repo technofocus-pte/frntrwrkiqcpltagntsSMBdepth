@@ -79,9 +79,9 @@ and configure it inside Microsoft 365 Copilot.
     2.  TAP Token -
         <+++@lab.CloudPortalCredential>(User1).AccessToken+++
 
-![](./d6f9bc5840002fa0172e0ad12196892737eae7dc.png)
-![](./370181bec556d226f2ab1c716438b89ff011cdc5.png)
-![](./8fe1bb8e06347326fe438aae04c93189109f5cb1.png)
+  ![](./d6f9bc5840002fa0172e0ad12196892737eae7dc.png)
+  ![](./370181bec556d226f2ab1c716438b89ff011cdc5.png)
+  ![](./8fe1bb8e06347326fe438aae04c93189109f5cb1.png)
 
 2.  From the left navigation panel, click **More agents**, then click
     **Create Agent**.
