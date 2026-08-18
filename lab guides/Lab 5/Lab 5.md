@@ -1,3 +1,4 @@
+# Lab 5 – Build a Frontline Operations Agent with Microsoft 365 Copilot
 **Estimated Duration:** 40 minutes
 
 ## **Lab objectives**
