@@ -1,3 +1,5 @@
+# Lab 10 – Build an Intelligent Agent with Knowledge Grounding and Live Connectors   
+
 **Introduction**
 
 Modern users expect intelligent, contextual responses that go beyond
