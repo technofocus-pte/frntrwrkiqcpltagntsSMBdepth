@@ -1,5 +1,5 @@
-**Lab 9 – Create an Autonomous Recruitment Agent with Microsoft Copilot
-Studio**
+# Lab 9 – Create an Autonomous Recruitment Agent with Microsoft Copilot
+Studio
 
 **Scenario**
 
@@ -439,7 +439,11 @@ existing) without depending on user interaction.
     important to include the description because it will help the agent
     know what to fill in the input.
 
-[TABLE]
+| Type | Name | Description |
+|---|---|---|
+| File | Resume | The Resume PDF file |
+| Text | Message | Extract a cover letter style message from the context. The message must be less than 2000 characters. |
+| Text | UserEmail | The email address that the Resume originated from. This will be the user uploading the resume in chat, or the from email address if received by email. |
 
 6.  ![](./media/image61.png)
 
@@ -479,7 +483,12 @@ existing) without depending on user interaction.
 
 10. Set the following **properties**:
 
-[TABLE]
+| Property | How to Set | Details / Expression |
+|---|---|---|
+| Resume Title | Dynamic data (⚡ icon) | When an agent calls the flow → **Resume name**. If you don't see the Resume name, make sure you have configured the Resume parameter above as a data type. |
+| Cover letter | Expression (fx icon) | `if(greater(length(triggerBody()?['text']), 2000), substring(triggerBody()?['text'], 0, 2000), triggerBody()?['text'])`<br><br>Click **Add** after the expression is entered. |
+| Source Email Address | Dynamic data (⚡ icon) | When an agent calls the flow → **UserEmail** |
+| Upload Date | Expression (fx icon) | `utcNow()`<br><br>Click **Add** after the expression is entered. |
 
 11. ![](./media/image69.png)
 
@@ -501,7 +510,13 @@ existing) without depending on user interaction.
 
 17. Set the following **properties**:
 
-[TABLE]
+| Property | How to Set | Details |
+|---|---|---|
+| Content name | Dynamic data (⚡ icon) | When an agent calls the flow → **Resume name** |
+| Table name | Select | **Resumes** |
+| Row ID | Dynamic data (⚡ icon) | Create Resume → See more → **Resume** |
+| Column Name | Select | **Resume PDF** |
+| Content | Dynamic data (⚡ icon) | When an agent calls the flow → **Resume contentBytes** |
 
 18. ![](./media/image75.png)
 
@@ -511,7 +526,12 @@ existing) without depending on user interaction.
 
 > ![](./media/image76.png)
 
-[TABLE]
+| Property | How to Set | Details |
+|---|---|---|
+| Type | Select | Text |
+| Name | Enter | `ResumeNumber` |
+| Value | Dynamic data (⚡ icon) | Create Resume → See More → **Resume Number** |
+| Description | Enter | The `[ResumeNumber]` of the Resume created |
 
 > ![](./media/image77.png)
 
@@ -1080,7 +1100,11 @@ decide which actions or topics to call.
 5.  The final step is to set the input properties of the trigger. Update
     the following properties to the following,
 
-[TABLE]
+| Property | How to Set | Details |
+|---|---|---|
+| Include Attachments (Optional) | Dropdown | Yes |
+| Subject Filter (Optional) | Type/Enter with keyboard | `Application` |
+| Only with Attachments (Optional) | Dropdown | Yes |
 
 6.  Select **Create trigger**.
 
@@ -1549,7 +1573,12 @@ be used later in this lab.
 
 12. Configure according to the following input parameters:
 
-[TABLE]
+| Parameter | How to Set | Details |
+|---|---|---|
+| Post as | Dropdown | Select the **Flow bot** option |
+| Post in | Dropdown | Select the **Channel** option |
+| Team | Dropdown | Select **HR Team** |
+| Channel | Dropdown | Select **Applicants channel** |
 
 13. ![](./media/image207.png)
 
@@ -2084,7 +2113,11 @@ be used later in this lab.
 18. You should see the following where highlighted in Yellow is your
     environment details of the **Hiring Hub** model-driven app.
 
-[TABLE]
+| Parameter | Value | Explanation |
+|---|---|---|
+| Organization URI | GUID | The Dataverse/Dynamics 365 environment organization URL |
+| appid | GUID | To open a specific model-driven app, the query parameter of either **appid** or **appname** is used. In this case, **appid** is used. |
+| viewid | GUID | The query parameter that specifies the ID of the view |
 
 19. ![](./media/image212.png)
 
@@ -2214,7 +2247,11 @@ be used later in this lab.
     highlighted in Yellow is your environment details of the **Hiring
     Hub** model-driven app.
 
-[TABLE]
+| Parameter | Value | Explanation |
+|---|---|---|
+| Organization URI | GUID | The Dataverse/Dynamics 365 environment organization URL |
+| appid | GUID | To open a specific model-driven app, the query parameter of either **appid** or **appname** is used. In this case, **appid** is used. |
+| id | GUID | The query parameter that specifies the ID of the Resume row |
 
 39. ![](./media/image232.png)
 
@@ -2405,12 +2442,17 @@ this lab.
     provided here. Use mail id of your choice. You will send an email
     from your mailbox to the tenant mail id.), **compose a new
     email** message.
-
-[TABLE]
+    
+| Email Component | Details |
+|---|---|
+| To recipient | `[+++@lab.CloudPortalCredential](mailto:+++@lab.CloudPortalCredential)(User1).Username+++` |
+| File attachment | Upload the **TAYLOR TESTPERSON (FICTITIOUS)** file from `C:\LabFiles\LabFiles` |
+| Subject | `Job Application` |
+| Body | Copy and paste the following below as the body of the email |
 
 2.  Dear Hiring Manager,
 
-3.  
+  
 
 4.  I am writing to express my interest in the Senior Power Platform
     Engineer position at your organization. With over nine years of
@@ -2418,7 +2460,7 @@ this lab.
     cloud platforms, I am confident in my ability to contribute
     effectively to your team.
 
-5.  
+
 
 6.  In my most recent role as Lead Power Platform Engineer, I developed
     an automated resume-intake pipeline, reducing manual triage and
@@ -2429,7 +2471,7 @@ this lab.
     Microsoft 365 services, as well as integration with Graph/REST APIs
     and Azure Functions.
 
-7.  
+
 
 8.  Previously, I developed Teams approvals with adaptive cards, cutting
     approval times to the same day, and created robust error-handling
@@ -2437,7 +2479,7 @@ this lab.
     to Power Automate and building self-service portals adopted by
     hundreds of employees.
 
-9.  
+  
 
 10. I hold a B.Sc. in Computer Science and am certified as a Power
     Platform Developer (PL-400) and Solution Architect (PL-600). I am
