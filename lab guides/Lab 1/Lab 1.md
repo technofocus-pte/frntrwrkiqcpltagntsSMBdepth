@@ -1,3 +1,4 @@
+# Lab 1 - Monitor and Optimize Program Execution with Planner Agent 
 **Estimated Duration:** 40 minutes
 
 **Lab Overview**
@@ -141,7 +142,11 @@ Creating plans in the planner
 
 10. Now we add the following new tasks in the Store Operations bucket:
 
-[TABLE]
+| Task name | Status | Priority | Due Date | Assign to |
+|---|---|---|---|---|
+| Reset Store Layouts – Region East | Completed | Medium | 5 days ago | Current Username |
+| Reset Store Layouts – Region West | In Progress | Medium | Tomorrow | Current Username |
+| Deep-Clean & Signage Refresh – Region West | Not Started | Urgent | 3 days ago (Overdue) | Current Username |
 
 11. So select **+Add Task** and enter the task name from the above
     table. Then select **Add Task**.
@@ -162,19 +167,31 @@ Creating plans in the planner
 
 17. Workforce Readiness:
 
-[TABLE]
+| Task name | Progress | Priority | Due Date | Assign to |
+|---|---|---|---|---|
+| Post Seasonal Job Openings | Completed | Medium | 7 days ago | Current Username |
+| Complete Seasonal Hiring – Region East | In Progress | Important | In 2 days | Current Username |
+| Complete Seasonal Onboarding & Training | Not Started | Medium | In 5 days | Current Username |
 
 18. Marketing & Promotions:
 
-[TABLE]
+| Task name | Progress | Priority | Due Date | Assign to |
+|---|---|---|---|---|
+| Finalize Peak Season Campaign Creative | Completed | Medium | 6 days ago | Current Username |
+| Launch Email & Social Campaign | In Progress | Important | Tomorrow | Current Username |
+| Coordinate In-Store Promo Displays | Not Started | Medium | In 4 days | Current Username |
 
 19. Inventory & Supply Chain
 
-[TABLE]
+| Task name | Progress | Priority | Due Date | Assign to |
+|---|---|---|---|---|
+| Confirm Backup Supplier Agreements | In Progress | Important | Tomorrow | Current Username |
+| Validate Store-Level Inventory Counts | Not Started | Urgent | Yesterday (Overdue) | Current Username |
+| Pre-Position Distribution Center Stock | Not Started | Medium | In 6 days | Current Username |
 
 20. So the final planner will look like this:
 
-21. ![](./media/image14.png)
+    ![](./media/image14.png)
 
 22. Now we are ready with the lab setup.
 
@@ -203,7 +220,7 @@ natural language.
 2.  Select **More agents**. Locate and select **Planner Agent** under
     Build by Microsoft.
 
-> ![](./media/image15.png)
+    ![](./media/image15.png)
 
 3.  Select **Open** to open Planner Agent.
 
@@ -212,7 +229,7 @@ natural language.
 
 4.  Now Planner agent is ready to go.
 
-> ![](./media/image17.png)
+    ![](./media/image17.png)
 
 **Exercise 2 – Analyze the Peak Season Readiness Program**
 
@@ -492,17 +509,17 @@ accomplishments, risks, and recommended actions.
 2.  Based on my Planner plan "Zava Retail – Peak Season Readiness",
     prepare a leadership update that includes:
 
-3.  • Overall project status
+    • Overall project status
 
-4.  • Completed work
+    • Completed work
 
-5.  • Tasks currently in progress
+    • Tasks currently in progress
 
-6.  • Remaining work
+    • Remaining work
 
-7.  • Overdue or high-priority tasks
+    • Overdue or high-priority tasks
 
-8.  • Recommended next steps
+    • Recommended next steps
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image51.png)
