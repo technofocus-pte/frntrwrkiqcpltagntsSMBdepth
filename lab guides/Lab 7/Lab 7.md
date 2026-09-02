@@ -1,12 +1,8 @@
-**COPILOT COWORK · LAB 5**
+# Lab 7: Copilot Cowork-Intelligent file organizer
 
-**Intelligent file organiser**
-
-[TABLE]
-
-**How to read this guide**
-
-[TABLE]
+| Estimated time | Difficulty | Apps |
+|---|---|---|
+| 30 minutes | Intermediate | Copilot Cowork, OneDrive, SharePoint, Excel, Microsoft Teams |
 
 # By the end of this lab, you will be able to:
 
@@ -110,9 +106,17 @@ approve and execute the batch rename into topic-organised subfolders.
 > **Cowork** tab, NOT the Chat tab. Click inside the prompt bar and
 > enter the classification prompt below.
 
-[TABLE]
+> PROMPT · CLASSIFY & PROPOSE RENAMES
 
-[TABLE]
+Analyze the files in my OneDrive **"Lab Files"** folder. Classify each file by **type** and **topic**, then propose a renaming scheme in the format:
+`YYYY-MM-DD_<Topic>_<DocType>`
+Base the proposed names on each file's content and metadata.
+
+**Important:** Show me the complete **old-name → new-name** mapping before renaming anything.
+
+> NOTE
+
+The **"Needs your input"** and **"Try these next"** cards at the bottom are from previous sessions. **Do not click them.**
 
 ![](./media/image5.png)
 
@@ -158,22 +162,16 @@ applied.*
 After analysis, Cowork produces the full old-name → new-name mapping and
 stops, it renames nothing until you approve.
 
-> **7.** Cowork completes all three steps (3/3). Read the output “Lab
-> Files — Analysis & Proposed Renaming,” one row per file.
->
-> • Read the date-basis legend: \[c\] = date in file content; \[p\] =
-> period from filename (Q1 -\> Jan 1); \[m\] = modified date; \[s\] =
-> inferred season.
+7. Cowork completes all three steps (3/3). Read the output “Lab Files — Analysis & Proposed Renaming,” one row per file.
+   • Read the date-basis legend: \[c\] = date in file content; \[p\] = period from filename (Q1 -\> Jan 1); \[m\] = modified date; \[s\] =         inferred season.
 
-[TABLE]
+> Important: The input box has returned to **“Message Cowork”**. Cowork has **STOPPED** and made **NO changes** in OneDrive.
+This is the **human-in-the-loop preview gate**.
 
-> **8.** Scroll through all sections (Shared Files, Archive, Retail,
-> Healthcare). Note any name you want to adjust.
->
-> **9.** In the message box, type the approval below and press the send
-> arrow:
-
-[TABLE]
+8. Scroll through all sections (Shared Files, Archive, Retail, Healthcare). Note any name you want to adjust.
+9. In the message box, type the approval below and press the send arrow:
+> Follow up: Approve
+> Proceed with suggesting the renaming scheme and create a new folder for all the latest renamed files.
 
 ![](./media/image10.png)
 
@@ -213,7 +211,9 @@ prompt.*
 >
 > **12.** Click the dark **Create** button to approve.
 
-[TABLE]
+> **▲ IMPORTANT**
+>
+> Do **not** type in the message box while this dialog is open.
 
 ![](./media/image16.png)
 
@@ -224,13 +224,9 @@ Workspace.*
 
 *Cursor on Create; about to approve folder creation.*
 
-> **13.** A **Use Microsoft Graph?** dialog appears for the first
-> rename. Click the dropdown next to Approve and choose **Always allow
-> Call graph** to grant batch permission.
->
-> **14.** If a **Failed 1 action** error appears (a locked file), note
-> it and continue, Cowork retries later. Watch for 5/5 in the Workspace
-> when all renames complete.
+13. A **Use Microsoft Graph?** dialog appears for the first rename. Click the dropdown next to Approve and choose **Always allow Call graph** to grant batch permission.
+
+14. If a **Failed 1 action** error appears (a locked file), note it and continue, Cowork retries later. Watch for 5/5 in the Workspace when all renames complete.
 
 ![](./media/image18.png)
 
@@ -265,16 +261,13 @@ pending” section.*
 
 ### Step 5 — Create topic subfolders and verify in OneDrive
 
-> **15.** In the message box, type the prompt below and send it:
+**15.** In the message box, type the prompt below and send it:
 
-[TABLE]
+> Follow-up · Subfolders
+> Create subfolders by topic and move the files accordingly.
 
-> **16.** The Workspace grows from 5/5 to 5/7, two steps are appended:
-> “Creating topic subfolders” and “Move files into topic subfolders.”
->
-> **17.** A **Create folder?** dialog appears for each subfolder
-> (Retail, Healthcare, Finance, Project Planning, Archive). Choose
-> **Always allow Create folder** in the dropdown.
+**16.** The Workspace grows from 5/5 to 5/7, two steps are appended: “Creating topic subfolders” and “Move files into topic subfolders.”
+**17.** A **Create folder?** dialog appears for each subfolder (Retail, Healthcare, Finance, Project Planning, Archive). Choose **Always allow Create folder** in the dropdown.
 
 ![](./media/image25.png)
 
@@ -333,7 +326,16 @@ action.
 > **20.** In the same session from Exercise 1, enter the prompt below
 > and send it:
 
-[TABLE]
+> Prompt · Governance audit
+
+> Audit my **"Lab Files"** folder for governance issues, including:
+
+> - Duplicate files
+> - Files not modified in over 6 months
+> - Files shared externally or with **"Anyone"** links
+> - Files with no clear owner or topic
+
+Recommend an action for each finding, such as **archive, delete, or restrict sharing**, but **take no action yet**.
 
 > **21.** The Workspace expands: three governance steps are appended to
 > the existing seven (check sharing/permissions, analyse
@@ -408,7 +410,7 @@ disclosure.*
 > **23.** In the message box, type the number below to approve action
 > \#2 (archive the 2024/2025/legacy items) and send it:
 
-[TABLE]
+> Follow-up · Approve action #2
 
 > **24.** Cowork executes ONLY action \#2. Actions \#1, \#3, \#4, and
 > \#5 stay pending, approving one does not authorise all.
@@ -419,7 +421,8 @@ disclosure.*
 > **26.** Ask the responsible-AI question below and read Cowork's
 > response:
 
-[TABLE]
+> Prompt · Responsible AI
+> Which of these governance actions should an agent ever take **without human approval**?
 
 > **27.** Note Cowork's autonomy boundary: “Safe without approval” =
 > read-only analysis only; “Needs human approval” = any action that
@@ -467,7 +470,11 @@ instruction.
 
 > **28.** In the same session, enter the prompt below and send it:
 
-[TABLE]
+**PROMPT · EXCEL + TEAMS**
+
+Create an Excel workbook **"File Governance Tracker.xlsx"** in **Lab Files** with one row per file: name, type, topic, last modified, sharing status, and action taken.
+
+Then post a **3-line summary** of today's cleanup to my Teams channel with a link to the workbook.
 
 > **29.** In the Workspace, the Skills & Plugins section activates the
 > Excel plugin alongside the existing Microsoft Graph permission.
@@ -562,7 +569,23 @@ workbook.
 > **39.** Return to Cowork and enter the healthcare classification
 > prompt below.
 
-[TABLE]
+**PROMPT · HEALTHCARE CLASSIFICATION**
+
+Analyze all files in my **Healthcare Documents** folder. Categorize documents into:
+
+- Patient Care
+- Insurance Claims
+- Compliance
+- Medical Equipment
+- Administration
+
+Rename files using the format:
+
+`YYYY-MM-DD_Department_DocumentType`
+
+Create subfolders for each category.
+
+**Important:** Show the proposed changes before making any modifications.
 
 > **40.** Read the classification table Cowork produces, it uses a real
 > clinical taxonomy (HIM, Clinical Policy, Revenue Cycle,
@@ -571,7 +594,8 @@ workbook.
 > **41.** When asked to choose between subfolder reorganisation or
 > adding a tracker column, enter the follow-up below:
 
-[TABLE]
+**FOLLOW-UP · TRACKER COLUMN**
+Add a **Business Function** column to the **File Governance Tracker** workbook.
 
 > **42.** Watch Cowork regenerate the workbook as v2 with the new
 > seven-column layout. Verify both v1 and v2 appear in the Workspace
@@ -628,7 +652,9 @@ taxonomy.*
 
 ### Step 2 — Reorganise the Healthcare folder into five subfolders
 
-[TABLE]
+**✎ CORRECTED**
+
+The earlier guide printed the same healthcare classification prompt twice (in the step above and here). This step uses the reorganisation follow-up instead; the classification prompt does not need to be sent again.
 
 > **43.** Cowork finds your Healthcare folder and presents the full
 > proposed plan, nothing has changed yet. Read all proposed renames
@@ -642,7 +668,9 @@ taxonomy.*
 > triggers a new two-step plan: create five subfolders, then rename and
 > move eight files.
 
-[TABLE]
+**FOLLOW-UP · APPROVE REORG**
+
+Proceed with the reorganization.
 
 > **46.** When the completion banner appears, open **OneDrive \>
 > Healthcare** to verify five category subfolders exist with the correct
