@@ -1,4 +1,4 @@
-LAB 4 Executive meeting coordinator
+# LAB 4 Executive meeting coordinator
 
 |  |  |
 |----|----|
