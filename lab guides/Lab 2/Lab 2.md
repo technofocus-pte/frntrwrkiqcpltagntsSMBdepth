@@ -1,4 +1,4 @@
-**Lab 2 – Unify Business Intelligence with Researcher Agent**
+# Lab 2 – Unify Business Intelligence with Researcher Agent**
 
 **Estimated duration:** 40 minutes
 
@@ -136,31 +136,15 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 5.  emails related to Zava Retail Festive Campaign from the past 90
     days.
 
-6.  
+   Include:
 
-7.  Include:
+  \- Campaign planning progress 
+  \- Vendor onboarding updates
+  \- Inventory readiness
+  \- Marketing campaign activities
+  \- Key risks or delays 
 
-8.  
-
-9.  \- Campaign planning progress
-
-10. 
-
-11. \- Vendor onboarding updates
-
-12. 
-
-13. \- Inventory readiness
-
-14. 
-
-15. \- Marketing campaign activities
-
-16. 
-
-17. \- Key risks or delays 
-
-> ![](./media/image10.png)
+  ![](./media/image10.png)
 
 18. Wait for the **Researcher Agent** to gather and summarize the data
     review the Researcher agent carefully. The Researcher Agent may ask
@@ -168,7 +152,7 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
     select/enter “Go ahead with your best judgement” and
     select **Send** button.
 
-> ![](./media/image11.png)
+  ![](./media/image11.png)
 >
 > \[!Note\] Ensure that demo campaign emails and Teams messages are
 > shared beforehand so the Researcher Agent can access relevant data and
@@ -193,22 +177,22 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 
 20. Review the output:
 
-> ![](./media/image12.png)
->
-> ![](./media/image13.png)
->
-> ![](./media/image14.png)
->
-> ![](./media/image15.png)
->
-> ![](./media/image16.png)
->
-> ![](./media/image17.png)
->
-> ![](./media/image18.png)
->
-> ![](./media/image19.png)
->
+  ![](./media/image12.png)
+
+  ![](./media/image13.png)
+
+  ![](./media/image14.png)
+
+  ![](./media/image15.png)
+
+  ![](./media/image16.png)
+  
+  ![](./media/image17.png)
+
+  ![](./media/image18.png)
+
+  ![](./media/image19.png)
+
 > Note: Generated outputs are non-deterministic and may vary across
 > users, sessions, and environments.
 
@@ -225,16 +209,16 @@ the data, findings, or situation.
 
 > +++List all action items related to the Zava Festive Campaign.+++
 >
-> ![](./media/image20.png)
+  ![](./media/image20.png)
 
 2.  Review the output:
 
     - Action items such as “Pending approval”, “Pending confirmation”,
       “Under review” are identified as **Action Items**.
 
-> ![](./media/image21.png)
->
-> ![](./media/image22.png)
+  ![](./media/image21.png)
+
+  ![](./media/image22.png)
 
 **Task 2: Key Decisions**
 
@@ -244,16 +228,16 @@ the data, findings, or situation.
 > +++Summarize key decisions made across emails and Teams discussions
 > for the campaign.+++
 >
-> ![](./media/image23.png)
+  ![](./media/image23.png)
 
 2.  Review the output:
 
     - The key decisions related to multiple action items and teams are
       summarized in the output.
 
-> ![](./media/image24.png)
->
-> ![](./media/image25.png)
+  ![](./media/image24.png)
+
+  ![](./media/image25.png)
 
 **Task 3: Draft Leadership Email**
 
@@ -265,7 +249,7 @@ the data, findings, or situation.
 > +++Draft an email to the leadership team summarizing campaign
 > readiness and participation.+++
 >
-> ![](./media/image26.png)
+  ![](./media/image26.png)
 
 3.  Wait for the **Researcher Agent** to gather and summarize the data
     review the Researcher agent carefully. The Researcher Agent may ask
@@ -273,15 +257,15 @@ the data, findings, or situation.
     select/Enter “Go ahead with your best judgement” and select
     the **Send** button.
 
-> ![](./media/image27.png)
+  ![](./media/image27.png)
 
 4.  Review the output: 
 
-> ![](./media/image28.png)
->
-> ![](./media/image29.png)
->
-> ![](./media/image30.png)
+  ![](./media/image28.png)
+  
+  ![](./media/image29.png)
+  
+  ![](./media/image30.png)
 
 **Task 4: Meeting Preparation (Executive Readiness)**
 
@@ -298,7 +282,7 @@ the upcoming meeting.
 > +++Help me prepare for an upcoming meeting by summarizing recent
 > communication and shared files about.+++
 >
-> ![](./media/image31.png)
+  ![](./media/image31.png)
 
 2.  Wait for the **Researcher Agent** to gather and summarize the data
     review the Researcher agent carefully. The Researcher Agent may ask
@@ -424,22 +408,10 @@ team. Patricia needs a leadership update.
     and then click on the **Send** button. 
 
 2.  Draft an executive summary email on Zava Festive Campaign covering:
-
-3.  
-
-4.  \- Progress
-
-5.  
-
-6.  \- Risks
-
-7.  
-
-8.  \- Key decisions
-
-9.  
-
-10. \- Next steps
+   \- Progress
+   \- Risks
+   \- Key decisions
+   \- Next steps
 
 > ![](./media/image53.png)
 
